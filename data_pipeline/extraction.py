@@ -20,10 +20,3 @@ def ext(endpoint):
     df = pd.DataFrame(result)
     return df
 
-
-
-games = ext('games')
-genre = ext('genres')
-
-print(games)
-print(genre)
