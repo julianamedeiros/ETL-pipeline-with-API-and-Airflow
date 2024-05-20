@@ -14,7 +14,7 @@ def ext(endpoint):
     }
 
     fields = '*'
-    data = f'fields {fields}; limit 10;'
+    data = f'fields {fields}; limit 200;'
     response = requests.post(url, headers=headers, data=data)
     result = response.json()
     df = pd.DataFrame(result)
