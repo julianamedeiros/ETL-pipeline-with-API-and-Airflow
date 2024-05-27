@@ -64,10 +64,11 @@ AND g.genre IS NULL;''')
 
 with engine.connect() as conn:
     conn.execute(join_query)
+    conn.commit()
     print('Data merged into main table')
 
 # Cleaning staging table
-truncate_query = text("TRUNCATE TABLE staging_games;")
-with engine.connect() as conn:
+    truncate_query = text("TRUNCATE TABLE staging_games;")
     conn.execute(truncate_query)
+    conn.commit()
     print('Staging table truncated')
