@@ -3,8 +3,8 @@ import pandas as pd
 
 #extracting data from the api
 
-client_id = '4lm24nqu7lb62cgvcs7gshypus0v4m'
-access_token = 'oom50h3it6kp99byhtfzgah60v1eg9'
+client_id = '' #add your credentials
+access_token = '' 
 
 def extract(endpoint):
     url =  f'https://api.igdb.com/v4/{endpoint}'

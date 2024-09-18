@@ -4,7 +4,7 @@ from data_pipeline.loading import load
 import pandas as pd
 from sqlalchemy import *
 
-#connect with database:
+#connect with your database:
 engine = create_engine('postgresql://postgres:password@localhost/games')
 
 
